@@ -13,3 +13,4 @@ The Procrastination Appreciation Generator is a simple website built using HTML,
 - **Appreciation Page**: Finally, users are presented with a page with an appreciation quote for procrastinating. They can regenerate another praise by clicking a button.
 
 
+![Webpage](readmeimg.png)
