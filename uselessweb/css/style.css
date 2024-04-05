@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+
+/* Main body */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFDF3;
+    overflow: hidden;
+}
+
+.maintitle{
+   font-family: 'Kaisei HarunoUmi', serif;
+   font-size: 46px;
+   font-weight: 700;
+   color: #E06319;
+   border-bottom: 1px solid #000;
+   padding-left: 50px;
+   margin-bottom: 0;
+   
+}
+
+.maintitle span{
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 46px;
+    font-weight: 700;
+    color: #022B6D;
+ }
+
+ /* Home page context */
+
+ .commons{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ 
+ }
+
+.homepage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 90px;
+}
+
+.homepage--context{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+    width: 600px;
+}
+
+.homepage--context .maincontent--title{
+   font-family: 'Inria Serif', serif;
+   font-size: 36px;
+   font-weight: 400;
+   color: #1B1B22;
+}
+
+.homepage--context .maincontent--desc{
+    font-family: 'Inria Serif', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #1B1B22;
+ }
+
+ .startpage--startbutton{
+    height: 70px;
+    width: 250px;
+    border: none;
+    border-radius: 90px;
+    color: #FFFFFF;
+    background-color: #E06319;
+    box-shadow: 1px 5px 5px #7b3710;
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 26px;
+    font-weight: 700;
+ }
+
+ .startpage--startbutton:hover{
+   
+   color: #FFFFFF;
+   background-color: #1B1B22;
+
+}
+
+  /* Delayed page context */
+
+ .delayedpage{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 90px;
+ }
+
+ .delayedpage--context{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+    width: 600px;
+}
+
+.delayedpage--context .waitcontent--title{
+   font-family: 'Inria Serif', serif;
+   font-size: 36px;
+   font-weight: 400;
+   color: #1B1B22;
+}
+
+.delayedpage--context .waitcontent--desc{
+    font-family: 'Inria Serif', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #1B1B22;
+ }
+
+  /* Result page context */
+
+.finalpage{
+   position: relative;
+
+}
+
+.finalpage img{
+   height: 90vh;
+   max-width: 90%;
+   float: right;
+}
+
+ 
+ /* Top left text */
+
+.final-content{
+   position: absolute;
+   top: 100px;
+   left: 16px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   padding-left: 100px;
+   width: 800px;
+
+}
+
+.result--appreciation{
+   font-family: 'Inria Serif', serif;
+   font-size: 34px;
+   font-weight: 400;
+   color: #1B1B22;
+   backdrop-filter: blur(50px);
+   box-shadow: 1px 5px 5px #483d36;
+   border: 1px solid;
+   border-radius: 30px;
+   padding: 30px;
+   animation: fadeIn 3s;
+}
+
+@keyframes fadeIn{
+   0%{
+      opacity: 0;
+   }
+
+   100%{
+      opacity: 1;
+   }
+}
+
+.result--desc{
+   font-family: 'Inria Serif', serif;
+   font-size: 30px;
+   font-weight: 400;
+   color: #1B1B22;
+}
+
+.generate--again{
+   height: 70px;
+   width: 250px;
+   border: none;
+   border-radius: 90px;
+   color: #FFFFFF;
+   background-color: #E06319;
+   box-shadow: 1px 5px 5px #7b3710;
+   font-family: 'Kaisei HarunoUmi', serif;
+   font-size: 26px;
+   font-weight: 700;
+}
+
+.generate--again:hover{
+   color: #FFFFFF;
+   background-color: #1B1B22;
+
+}
+
+/* responsive code */
+
+@media only screen and (max-width: 768px) {
+
+   .maintitle {
+      font-size: 42px;
+    }
+
+    .maintitle span{
+      font-size: 42px;
+    }
+
+   .homepage, .delayedpage{
+      position: absolute;
+      text-align: center;
+   }
+
+   .common-img{
+      position: relative;
+   }
+ 
+   .homepage--context,
+   .delayedpage--context {
+     z-index: 1;
+     padding-left: 0;
+     width: auto;
+     text-align: center;
+     align-items: center;
+     backdrop-filter: blur(5px);
+     margin: 50px;
+     border: 1px solid;
+     border-radius: 30px;
+     padding: 10px;
+
+   }
+
+   .startpage--startbutton{
+      margin-bottom: 20px;
+   }
+ 
+   .finalpage img {
+     float: none;
+     height: auto;
+     max-width: 100%;
+     background-size: cover;
+   }
+ 
+   .final-content {
+     top: 5%;
+     left: 0;
+     width: 100%;
+     max-width: fit-content;
+    padding: 20px;
+     text-align: center;
+     align-items: center;
+   }
+
+   .final-content .result--appreciation{
+      backdrop-filter: blur(5px);
+   }
+ }
+ 
+ /* For screens up to 480px */
+ @media only screen and (max-width: 480px) {
+   .maintitle {
+     font-size: 34px;
+   }
+
+   .maintitle span{
+      font-size: 34px;
+    }
+
+    .common-img img{
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .homepage,
+    .delayedpage {
+      top: 10%;
+ 
+    }
+ 
+   .homepage--context .maincontent--title,
+   .homepage--context .maincontent--desc,
+   .delayedpage--context .waitcontent--title,
+   .delayedpage--context .waitcontent--desc,
+   .result--appreciation,
+   .result--desc {
+     font-size: 24px;
+   }
+ 
+   .startpage--startbutton,
+   .generate--again {
+     height: 50px;
+     width: 200px;
+     font-size: 20px;
+   }
+
+   .final-content {
+      top: 2%;
+   
+    }
+ }
+
+
+
