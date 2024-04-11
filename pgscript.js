@@ -29,7 +29,7 @@ function pageLoaded(){
 
         console.log("wait page is ready");
 
-        setTimeout(redirectToResultpage, 2000);
+        setTimeout(redirectToResultpage, 5000);
 
     }
 
