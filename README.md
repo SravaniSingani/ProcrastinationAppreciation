@@ -16,5 +16,5 @@ The Procrastination Appreciation Generator is a simple website built using HTML,
 - **Wait Page**: After clicking the button, users are directed to a page where they must wait for 10 seconds, with a message reminding them that they're used to delayed performances.
 - **Appreciation Page**: Finally, users are presented with a page with an appreciation quote for procrastinating. They can regenerate another praise by clicking a button.
 
-<img src="readmeimg.png" alt="Procrastination Appreciation Generator" style="width:750px;height:500px;">
+
 
