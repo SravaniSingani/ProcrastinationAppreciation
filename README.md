@@ -6,7 +6,7 @@
 
 Welcome to the Procrastination Appreciation Generator, a useless website designed to appreciate your procrastination skills!
 
-## Description
+## About
 
 The Procrastination Appreciation Generator is a simple website built using HTML, CSS, and JavaScript. It serves as a light-hearted distraction for those moments when you just need a break from more important tasks.
 
